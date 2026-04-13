@@ -1,0 +1,107 @@
+/* CSS VARIABLES */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #f3f4f6;
+  --text-color: #333;
+  --font-main: Arial, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--primary-color);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-subscribe {
+  padding: 8px 16px;
+  border: none;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-subscribe:hover {
+  transform: scale(1.05);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.hero img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+.container {
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+/* CONTENT 70% */
+.content {
+  flex: 7;
+}
+
+/* SIDEBAR 30% */
+.sidebar {
+  flex: 3;
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #111;
+  color: white;
+}
+
+.footer-col {
+  width: 30%;
+}
