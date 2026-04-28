@@ -1,0 +1,265 @@
+/* =====================
+   CSS VARIABLES
+===================== */
+:root {
+  --primary: #1f2937;
+  --secondary: #d4af37;
+  --bg: #f9fafb;
+  --text: #111827;
+  --white: #ffffff;
+  --spacing: 1rem;
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* =====================
+   NAVBAR (FLEXBOX)
+===================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  padding: var(--spacing);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--secondary);
+}
+
+/* =====================
+   HERO (GRID)
+===================== */
+.hero {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.btn {
+  background: var(--secondary);
+  color: black;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ANIMATION */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-badge {
+  background: var(--secondary);
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  animation: pulse 2s infinite;
+  border-radius: 8px;
+}
+
+/* =====================
+   PRODUK GRID
+===================== */
+.fitur h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.grid-card {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  border: 1px solid #eee;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* PSEUDO ELEMENT */
+.card::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background: var(--secondary);
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.card:hover::after {
+  width: 100%;
+}
+
+/* =====================
+   TESTIMONIAL
+===================== */
+.testimonial {
+  padding: 2rem 0;
+}
+
+.grid-testi {
+  display: grid;
+  gap: 1rem;
+}
+
+.testimonial .card {
+  border-left: 4px solid var(--secondary);
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.grid-footer {
+  display: grid;
+  gap: 1rem;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+/* TABLET */
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .grid-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}

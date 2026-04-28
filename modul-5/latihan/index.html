@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Jubah Al-syafa</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-900 dark:text-white transition">
+    <nav class="navbar">
+      <h1 class="font-bold text-xl text-yellow-500">JubahStore</h1>
+
+      <div class="hidden md:flex gap-6">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Produk</a>
+        <a class="nav-link" href="#">Harga</a>
+        <a class="nav-link" href="#">Kontak</a>
+      </div>
+
+      <div class="flex gap-2">
+        <button id="toggleDark" class="btn">🌙</button>
+
+        <!-- hamburger (tanpa JS) -->
+        <button class="md:hidden text-2xl">☰</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="text-center py-20 bg-gradient-to-r from-yellow-200 via-yellow-100 to-white dark:from-gray-800"
+    >
+      <h2 class="text-4xl font-bold animate-pulse">Jubah Premium Elegan</h2>
+      <p class="mt-3 text-gray-600 dark:text-gray-300">
+        Tampil syar’i, modern, dan nyaman dipakai
+      </p>
+      <button class="btn mt-5 animate-bounce">Belanja Sekarang</button>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="py-16 px-6">
+      <h2 class="section-title">Produk Kami</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.XyizfyXAc91gmAyW56KHtQHaLH?pid=Api&P=0&h=700"
+            class="rounded w-full h-65 object-cover"
+          />
+          <h3 class="font-semibold mt-2">Jubah Hitam</h3>
+          <p>Rp 1.000.000</p>
+          <button class="btn mt-2">Pesan</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <img
+            src="https://d2kchovjbwl1tk.cloudfront.net/vendor/83/product/1F5D8398-DA57-4DC2-B394-F398ACA39BF6_1678059870235.jpeg"
+            class="rounded w-full h-65 object-cover"
+          />
+          <h3 class="font-semibold mt-2">Jubah Putih</h3>
+          <p>Rp 1.500.000</p>
+          <button class="btn mt-2">Pesan</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <img
+            src="https://4.bp.blogspot.com/-ujhhM-FApA0/WMIhvEJPe4I/AAAAAAAAALE/3BxyLl8I2KAQLzjx1wvBhZ_Mlk9FAHQawCEw/s1600/1.jpg"
+            class="rounded w-full h-65 object-cover"
+          />
+          <h3 class="font-semibold mt-2">Jubah Saudi Style</h3>
+          <p>Rp 1.800.000</p>
+          <button class="btn mt-2">Pesan</button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+          <img
+            src="https://alshiaka.com/wp-content/uploads/2026/02/zakhrafat-boy-thobe-saudi-embroidrey-zipper-regular-ramadan-eid-beige-collar-4-1.jpg"
+            class="rounded w-full h-65 object-cover"
+          />
+          <h3 class="font-semibold mt-2">Jubah Anak</h3>
+          <p>Rp 1.000.000</p>
+          <button class="btn mt-2">Pesan</button>
+        </div>
+
+        <!-- CARD 5 -->
+<div class="card">
+  <img
+    src="data:image/jpeg;base64,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"
+    class="rounded w-full h-65 object-cover"
+    alt="Jubah Maroko"
+  />
+  <h3 class="font-semibold mt-2">Jubah Maroko</h3>
+  <p>Rp 2.000.000</p>
+  <button class="btn mt-2">Pesan</button>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+  <img
+    src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/64dcb1fd275e48a5bfb5b6559a354571~tplv-aphluv4xwc-white-pad-v1:500:500.jpeg"
+    class="rounded w-full h-64 object-cover"
+    alt="Jubah Slim Fit"
+  />
+  <h3 class="font-semibold mt-2">Jubah Modern Slim Fit</h3>
+  <p>Rp 1.900.000</p>
+  <button class="btn mt-2">Pesan</button>
+</div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="py-16 bg-gray-100 dark:bg-gray-800 px-6">
+      <h2 class="section-title">Testimoni</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card">“Bahannya bagus banget!”</div>
+        <div class="card">“Pengiriman cepat!”</div>
+        <div class="card">“Harga worth it!”</div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-16 text-center px-6">
+      <h2 class="section-title">Newsletter</h2>
+
+      <input
+        type="email"
+        placeholder="Email kamu"
+        class="p-3 rounded w-full md:w-1/2 border"
+      />
+
+      <button class="btn mt-4">Subscribe</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 bg-black text-white">
+      © 2026 JubahStore. All rights reserved.
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
