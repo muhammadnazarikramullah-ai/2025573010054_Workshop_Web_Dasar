@@ -1,13 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>--</title>
+    <title>LuxScent - Parfum Premium</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <nav class="navbar">
+      <div class="container nav-wrapper">
+        <h1 class="logo">LuxScent</h1>
+        <ul class="nav-menu">
+          <li><a href="#About">Home</a></li>
+          <li><a href="#Fitur">Produk</a></li>
+          <li><a href="#Testimoni">Testimoni</a></li>
+          <li><a href="#Kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="About" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-grid">
+        <div>
+          <h2>Temukan Aroma yang Mewakili Dirimu</h2>
+          <p>Parfum premium dengan wangi elegan dan tahan lama.</p>
+          <button class="btn">Belanja Sekarang</button>
+        </div>
+        <div class="hero-badge">💎 Premium</div>
+      </div>
+    </section>
+    <section id="Fitur" class="fitur container">
+      <h2 class="pt-4">Produk Favorit</h2>
+      <div class="grid-card">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=500&q=80"
+            alt="Floral Perfume"
+          />
+          <h3>Floral Essence</h3>
+          <p>Aroma bunga lembut dan feminin.</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=500&q=80"
+            alt="Woody Perfume"
+          />
+          <h3>Woody Musk</h3>
+          <p>Wangi maskulin yang kuat dan elegan.</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=500&q=80"
+            alt="Citrus Perfume"
+          />
+          <h3>Fresh Citrus</h3>
+          <p>Segar dan ringan untuk aktivitas harian.</p>
+        </div>
+      </div>
+    </section>
+    <section id="Testimoni" class="testimonial">
+      <div class="container grid-testi">
+        <div class="card">
+          <p>"Wanginya tahan lama banget, suka!"</p>
+          <span>- Aulia</span>
+        </div>
+        <div class="card">
+          <p>"Packaging elegan, cocok buat hadiah."</p>
+          <span>- Dimas</span>
+        </div>
+      </div>
+    </section>
+    <footer id="Kontak" class="footer">
+      <div class="container grid-footer">
+        <div>
+          <h3>LuxScent</h3>
+          <p>Parfum premium pilihan terbaik.</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <p>Home</p>
+          <p>Produk</p>
+          <p>Testimoni</p>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>Email: parfum@email.com</p>
+          <p>WA: 081231235678</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

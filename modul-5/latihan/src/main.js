@@ -1,3 +1,5 @@
+import './style.css'
+
 const html = document.documentElement;
 const toggleBtn = document.getElementById("toggleDark");
 
